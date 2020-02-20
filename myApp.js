@@ -9,9 +9,7 @@
 /** 1) Install & Set up mongoose */
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb+srv://pedroabs42:mongo123@freecodecamp-8lldz.mongodb.net/test?retryWrites=true&w=majority',
-  { useNewUrlParser: true, useUnifiedTopology: true },
-  () => console.log('mongodb conectado'))
+mongoose.connect('mongodb+srv://pedroabs42:mongo123@freecodecamp-8lldz.mongodb.net/test?retryWrites=true&w=majority', { useUnifiedTopology: true })
 
 // Add mongodb and mongoose to the project's package.json. Then require 
 // mongoose. Store your Mongo Atlas database URI in the private .env file 
